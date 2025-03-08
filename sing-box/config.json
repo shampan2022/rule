@@ -9,8 +9,8 @@
       "external_controller": "0.0.0.0:9095",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
-      "external_ui_download_url": "https://ghfast.top/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "馃幆 鍏ㄧ悆鐩磋繛",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "🚀 节点选择",
       "default_mode": "rule"
     },
     "cache_file": {
@@ -26,14 +26,14 @@
         "address": "223.5.5.5",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
-        "detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "detour": "🎯 全球直连"
       },
       {
         "tag": "dns_proxy",
         "address": "tls://8.8.8.8",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
-        "detour": "馃殌 鑺傜偣閫夋嫨"
+        "detour": "🚀 节点选择"
       }
     ],
     "rules": [
@@ -52,6 +52,7 @@
       },
       {
         "rule_set": "geosite-cn",
+        "action": "route",
         "server": "dns_direct"
       },
       {
@@ -72,367 +73,416 @@
   ],
   "outbounds": [
     {
-      "tag": "馃殌 鑺傜偣閫夋嫨",
+      "tag": "🚀 节点选择",
       "type": "selector",
       "outbounds": [
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃幆 鍏ㄧ悆鐩磋繛"
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换",
+        "♻️ 自动选择",
+        "🎯 全球直连"
       ]
     },
     {
-      "tag": "馃摴 YouTube",
+      "tag": "📹 YouTube",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃 OpenAI",
+      "tag": "🤖 OpenAI",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃崁 Google",
+      "tag": "🍀 Google",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃懆鈥嶐煉?Github",
+      "tag": "👨‍💻 Github",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃獰 Microsoft",
+      "tag": "🪟 Microsoft",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃幆 鍏ㄧ悆鐩磋繛"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🎯 全球直连"
       ]
     },
     {
-      "tag": "馃惉 OneDrive",
+      "tag": "🐬 OneDrive",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃幍 TikTok",
+      "tag": "🎵 TikTok",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃帴 Netflix",
+      "tag": "🎥 Netflix",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃摬 Telegram",
+      "tag": "📲 Telegram",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "鈾伙笍 鑷姩閫夋嫨",
-        "馃敮 棣欐腐鑷姩",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣",
-        "馃惛 鎵嬪姩鍒囨崲"
+        "🚀 节点选择",
+        "♻️ 自动选择",
+        "🔯 香港自动",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点",
+        "🐸 手动切换"
       ]
     },
     {
-      "tag": "馃崗 Apple",
+      "tag": "🍏 Apple",
       "type": "selector",
       "outbounds": [
-        "馃幆 鍏ㄧ悆鐩磋繛",
-        "馃嚟馃嚢 棣欐腐鑺傜偣",
-        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
-        "馃嚭馃嚥 缇庡浗鑺傜偣"
+        "🎯 全球直连",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇺🇲 美国节点"
       ]
     },
     {
-      "tag": "馃悹 婕忕綉涔嬮奔",
+      "tag": "🐠 漏网之鱼",
       "type": "selector",
       "outbounds": [
-        "馃殌 鑺傜偣閫夋嫨",
-        "馃幆 鍏ㄧ悆鐩磋繛"
+        "🚀 节点选择",
+        "🎯 全球直连"
       ]
     },
     {
-      "tag": "馃惛 鎵嬪姩鍒囨崲",
+      "tag": "🐸 手动切换",
       "type": "selector",
       "outbounds": [
-        "褰撳墠娴侀噺:66.88G / 300.00G",
-        "馃嚟馃嚢 棣欐腐 01",
-        "馃嚟馃嚢 棣欐腐 02",
-        "馃嚟馃嚢 棣欐腐 03",
-        "馃嚟馃嚢 棣欐腐 04",
-        "馃嚟馃嚢 棣欐腐 05",
-        "馃嚟馃嚢 棣欐腐 06",
-        "馃嚟馃嚢 棣欐腐 07",
-        "馃嚟馃嚢 棣欐腐 08",
-        "馃嚟馃嚢 棣欐腐 09",
-        "馃嚟馃嚢 棣欐腐 10",
-        "馃嚟馃嚢 棣欐腐 11",
-        "馃嚟馃嚢 棣欐腐 12",
-        "馃嚟馃嚢 棣欐腐 13",
-        "馃嚟馃嚢 棣欐腐 14",
-        "馃嚟馃嚢 棣欐腐 15",
-        "馃嚟馃嚢 棣欐腐 16",
-        "馃嚟馃嚢 棣欐腐 17",
-        "馃嚟馃嚢 棣欐腐 18",
-        "馃嚟馃嚢 棣欐腐 19",
-        "馃嚟馃嚢 棣欐腐 20",
-        "馃嚟馃嚢 棣欐腐 21",
-        "馃嚭馃嚫 缇庡浗 01",
-        "馃嚭馃嚫 缇庡浗 02",
-        "馃嚭馃嚫 缇庡浗 03",
-        "馃嚭馃嚫 缇庡浗 04",
-        "馃嚭馃嚫 缇庡浗 05",
-        "馃嚭馃嚫 缇庡浗 06",
-        "馃嚭馃嚫 缇庡浗 07",
-        "馃嚭馃嚫 缇庡浗 08",
-        "馃嚭馃嚫 缇庡浗 09",
-        "馃嚭馃嚫 缇庡浗 10",
-        "馃嚭馃嚫 缇庡浗 11",
-        "馃嚭馃嚫 缇庡浗 12",
-        "馃嚭馃嚫 缇庡浗 13",
-        "馃嚡馃嚨 鏃ユ湰 01",
-        "馃嚡馃嚨 鏃ユ湰 02",
-        "馃嚡馃嚨 鏃ユ湰 03",
-        "馃嚡馃嚨 鏃ユ湰 04",
-        "馃嚡馃嚨 鏃ユ湰 05",
-        "馃嚡馃嚨 鏃ユ湰 06",
-        "馃嚡馃嚨 鏃ユ湰 07",
-        "馃嚡馃嚨 鏃ユ湰 08",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
-        "馃嚫馃嚞 鏂板姞鍧?01",
-        "馃嚫馃嚞 鏂板姞鍧?02",
-        "馃嚫馃嚞 鏂板姞鍧?03",
-        "馃嚫馃嚞 鏂板姞鍧?04"
+        "Traffic: 18.81 GB | 150 GB",
+        "Expire: 2026-01-26",
+        "🇭🇰 香港实验性 IEPL 中继 1",
+        "🇯🇵 日本实验性 IEPL 中继 1",
+        "🇸🇬 新加坡实验性 IEPL 中继 1",
+        "🇺🇸 美国实验性 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 2",
+        "🇭🇰 香港高级 IEPL 中继 3",
+        "🇯🇵 日本高级 IEPL 中继 1",
+        "🇯🇵 日本高级 IEPL 中继 2",
+        "🇯🇵 日本高级 IEPL 中继 3",
+        "🇸🇬 新加坡高级 IEPL 中继 1",
+        "🇸🇬 新加坡高级 IEPL 中继 2",
+        "🇸🇬 新加坡高级 IEPL 中继 3",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 1",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 2",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 3",
+        "🇺🇸 美国高级 IEPL 中继 1",
+        "🇺🇸 美国高级 IEPL 中继 2",
+        "🇺🇸 美国高级 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 1",
+        "🇭🇰 香港标准 IEPL 中继 2",
+        "🇭🇰 香港标准 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 4",
+        "🇭🇰 香港标准 IEPL 中继 5",
+        "🇭🇰 香港标准 IEPL 中继 6",
+        "🇭🇰 香港标准 IEPL 中继 7",
+        "🇭🇰 香港标准 IEPL 中继 8",
+        "🇯🇵 日本标准 IEPL 中继 1",
+        "🇯🇵 日本标准 IEPL 中继 2",
+        "🇯🇵 日本标准 IEPL 中继 3",
+        "🇯🇵 日本标准 IEPL 中继 4",
+        "🇯🇵 日本标准 IEPL 中继 5",
+        "🇯🇵 日本标准 IEPL 中继 6",
+        "🇯🇵 日本标准 IEPL 中继 7",
+        "🇯🇵 日本标准 IEPL 中继 8",
+        "🇸🇬 新加坡标准 IEPL 中继 1",
+        "🇸🇬 新加坡标准 IEPL 中继 2",
+        "🇸🇬 新加坡标准 IEPL 中继 3",
+        "🇸🇬 新加坡标准 IEPL 中继 4",
+        "🇸🇬 新加坡标准 IEPL 中继 5",
+        "🇸🇬 新加坡标准 IEPL 中继 6",
+        "🇸🇬 新加坡标准 IEPL 中继 7",
+        "🇸🇬 新加坡标准 IEPL 中继 8",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 1",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 2",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 1",
+        "🇺🇸 美国标准 IEPL 中继 2",
+        "🇺🇸 美国标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 4",
+        "🇺🇸 美国标准 IEPL 中继 5",
+        "🇺🇸 美国标准 IEPL 中继 6",
+        "🇺🇸 美国标准 IEPL 中继 7",
+        "🇺🇸 美国标准 IEPL 中继 8",
+        "🇲🇩 摩尔多瓦标准 IEPL 中继 1",
+        "🇺🇦 乌克兰标准 IEPL 中继 1",
+        "🇮🇹 意大利标准 IEPL 中继 1",
+        "🇭🇺 匈牙利标准 IEPL 中继 1",
+        "🇪🇸 西班牙标准 IEPL 中继 1",
+        "🇹🇷 土耳其标准 IEPL 中继 1",
+        "🇩🇪 德国标准 IEPL 中继 1",
+        "🇩🇪 德国标准 IEPL 中继 2",
+        "🇬🇧 英国标准 IEPL 中继 1",
+        "🇬🇧 英国标准 IEPL 中继 2",
+        "🇳🇱 荷兰标准 IEPL 中继 1",
+        "🇳🇱 荷兰标准 IEPL 中继 2",
+        "🇫🇷 法国标准 IEPL 中继 1",
+        "🇫🇷 法国标准 IEPL 中继 2",
+        "🇨🇦 加拿大标准 IEPL 中继 1",
+        "🇨🇦 加拿大标准 IEPL 中继 2",
+        "🇦🇷 阿根廷标准 IEPL 中继 1",
+        "🇧🇷 巴西标准 IEPL 中继 1",
+        "🇨🇱 智利标准 IEPL 中继 1",
+        "🇦🇺 澳大利亚标准 IEPL 中继 1",
+        "🇳🇿 新西兰标准 IEPL 中继 1",
+        "🇰🇷 韩国标准 IEPL 中继 1",
+        "🇰🇷 韩国标准 IEPL 中继 2",
+        "🇮🇩 印尼标准 IEPL 中继 1",
+        "🇹🇭 泰国标准 IEPL 中继 1",
+        "🇻🇳 越南标准 IEPL 中继 1",
+        "🇮🇳 印度标准 IEPL 中继 1",
+        "🇵🇰 巴基斯坦标准 IEPL 中继 1",
+        "🇮🇱 以色列标准 IEPL 中继 1",
+        "🇦🇪 阿联酋标准 IEPL 中继 1",
+        "🇵🇭 菲律宾标准 IEPL 中继 1",
+        "🇲🇾 马来西亚标准 IEPL 中继 1",
+        "🇪🇬 埃及标准 IEPL 中继 1"
       ]
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐鑺傜偣",
+      "tag": "🇭🇰 香港节点",
       "type": "selector",
       "outbounds": [
-        "馃嚟馃嚢 棣欐腐 01",
-        "馃嚟馃嚢 棣欐腐 02",
-        "馃嚟馃嚢 棣欐腐 03",
-        "馃嚟馃嚢 棣欐腐 04",
-        "馃嚟馃嚢 棣欐腐 05",
-        "馃嚟馃嚢 棣欐腐 06",
-        "馃嚟馃嚢 棣欐腐 07",
-        "馃嚟馃嚢 棣欐腐 08",
-        "馃嚟馃嚢 棣欐腐 09",
-        "馃嚟馃嚢 棣欐腐 10",
-        "馃嚟馃嚢 棣欐腐 11",
-        "馃嚟馃嚢 棣欐腐 12",
-        "馃嚟馃嚢 棣欐腐 13",
-        "馃嚟馃嚢 棣欐腐 14",
-        "馃嚟馃嚢 棣欐腐 15",
-        "馃嚟馃嚢 棣欐腐 16",
-        "馃嚟馃嚢 棣欐腐 17",
-        "馃嚟馃嚢 棣欐腐 18",
-        "馃嚟馃嚢 棣欐腐 19",
-        "馃嚟馃嚢 棣欐腐 20",
-        "馃嚟馃嚢 棣欐腐 21"
+        "🇭🇰 香港实验性 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 2",
+        "🇭🇰 香港高级 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 1",
+        "🇭🇰 香港标准 IEPL 中继 2",
+        "🇭🇰 香港标准 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 4",
+        "🇭🇰 香港标准 IEPL 中继 5",
+        "🇭🇰 香港标准 IEPL 中继 6",
+        "🇭🇰 香港标准 IEPL 中继 7",
+        "🇭🇰 香港标准 IEPL 中继 8"
       ]
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+      "tag": "🇯🇵 日本节点",
       "type": "selector",
       "outbounds": [
-        "馃嚡馃嚨 鏃ユ湰 01",
-        "馃嚡馃嚨 鏃ユ湰 02",
-        "馃嚡馃嚨 鏃ユ湰 03",
-        "馃嚡馃嚨 鏃ユ湰 04",
-        "馃嚡馃嚨 鏃ユ湰 05",
-        "馃嚡馃嚨 鏃ユ湰 06",
-        "馃嚡馃嚨 鏃ユ湰 07",
-        "馃嚡馃嚨 鏃ユ湰 08"
+        "🇯🇵 日本实验性 IEPL 中继 1",
+        "🇯🇵 日本高级 IEPL 中继 1",
+        "🇯🇵 日本高级 IEPL 中继 2",
+        "🇯🇵 日本高级 IEPL 中继 3",
+        "🇯🇵 日本标准 IEPL 中继 1",
+        "🇯🇵 日本标准 IEPL 中继 2",
+        "🇯🇵 日本标准 IEPL 中继 3",
+        "🇯🇵 日本标准 IEPL 中继 4",
+        "🇯🇵 日本标准 IEPL 中继 5",
+        "🇯🇵 日本标准 IEPL 中继 6",
+        "🇯🇵 日本标准 IEPL 中继 7",
+        "🇯🇵 日本标准 IEPL 中继 8"
       ]
     },
     {
-      "tag": "馃嚭馃嚥 缇庡浗鑺傜偣",
+      "tag": "🇺🇲 美国节点",
       "type": "selector",
       "outbounds": [
-        "馃嚭馃嚫 缇庡浗 01",
-        "馃嚭馃嚫 缇庡浗 02",
-        "馃嚭馃嚫 缇庡浗 03",
-        "馃嚭馃嚫 缇庡浗 04",
-        "馃嚭馃嚫 缇庡浗 05",
-        "馃嚭馃嚫 缇庡浗 06",
-        "馃嚭馃嚫 缇庡浗 07",
-        "馃嚭馃嚫 缇庡浗 08",
-        "馃嚭馃嚫 缇庡浗 09",
-        "馃嚭馃嚫 缇庡浗 10",
-        "馃嚭馃嚫 缇庡浗 11",
-        "馃嚭馃嚫 缇庡浗 12",
-        "馃嚭馃嚫 缇庡浗 13"
+        "🇺🇸 美国实验性 IEPL 中继 1",
+        "🇺🇸 美国高级 IEPL 中继 1",
+        "🇺🇸 美国高级 IEPL 中继 2",
+        "🇺🇸 美国高级 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 1",
+        "🇺🇸 美国标准 IEPL 中继 2",
+        "🇺🇸 美国标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 4",
+        "🇺🇸 美国标准 IEPL 中继 5",
+        "🇺🇸 美国标准 IEPL 中继 6",
+        "🇺🇸 美国标准 IEPL 中继 7",
+        "🇺🇸 美国标准 IEPL 中继 8"
       ]
     },
     {
-      "tag": "馃敮 棣欐腐鑷姩",
+      "tag": "🔯 香港自动",
       "type": "urltest",
       "outbounds": [
-        "馃嚟馃嚢 棣欐腐 01",
-        "馃嚟馃嚢 棣欐腐 02",
-        "馃嚟馃嚢 棣欐腐 03",
-        "馃嚟馃嚢 棣欐腐 04",
-        "馃嚟馃嚢 棣欐腐 05",
-        "馃嚟馃嚢 棣欐腐 06",
-        "馃嚟馃嚢 棣欐腐 07",
-        "馃嚟馃嚢 棣欐腐 08",
-        "馃嚟馃嚢 棣欐腐 09",
-        "馃嚟馃嚢 棣欐腐 10",
-        "馃嚟馃嚢 棣欐腐 11",
-        "馃嚟馃嚢 棣欐腐 12",
-        "馃嚟馃嚢 棣欐腐 13",
-        "馃嚟馃嚢 棣欐腐 14",
-        "馃嚟馃嚢 棣欐腐 15",
-        "馃嚟馃嚢 棣欐腐 16",
-        "馃嚟馃嚢 棣欐腐 17",
-        "馃嚟馃嚢 棣欐腐 18",
-        "馃嚟馃嚢 棣欐腐 19",
-        "馃嚟馃嚢 棣欐腐 20",
-        "馃嚟馃嚢 棣欐腐 21"
+        "🇭🇰 香港实验性 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 2",
+        "🇭🇰 香港高级 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 1",
+        "🇭🇰 香港标准 IEPL 中继 2",
+        "🇭🇰 香港标准 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 4",
+        "🇭🇰 香港标准 IEPL 中继 5",
+        "🇭🇰 香港标准 IEPL 中继 6",
+        "🇭🇰 香港标准 IEPL 中继 7",
+        "🇭🇰 香港标准 IEPL 中继 8"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
       "tolerance": 50
     },
     {
-      "tag": "鈾伙笍 鑷姩閫夋嫨",
+      "tag": "♻️ 自动选择",
       "type": "urltest",
       "outbounds": [
-        "褰撳墠娴侀噺:66.88G / 300.00G",
-        "馃嚟馃嚢 棣欐腐 01",
-        "馃嚟馃嚢 棣欐腐 02",
-        "馃嚟馃嚢 棣欐腐 03",
-        "馃嚟馃嚢 棣欐腐 04",
-        "馃嚟馃嚢 棣欐腐 05",
-        "馃嚟馃嚢 棣欐腐 06",
-        "馃嚟馃嚢 棣欐腐 07",
-        "馃嚟馃嚢 棣欐腐 08",
-        "馃嚟馃嚢 棣欐腐 09",
-        "馃嚟馃嚢 棣欐腐 10",
-        "馃嚟馃嚢 棣欐腐 11",
-        "馃嚟馃嚢 棣欐腐 12",
-        "馃嚟馃嚢 棣欐腐 13",
-        "馃嚟馃嚢 棣欐腐 14",
-        "馃嚟馃嚢 棣欐腐 15",
-        "馃嚟馃嚢 棣欐腐 16",
-        "馃嚟馃嚢 棣欐腐 17",
-        "馃嚟馃嚢 棣欐腐 18",
-        "馃嚟馃嚢 棣欐腐 19",
-        "馃嚟馃嚢 棣欐腐 20",
-        "馃嚟馃嚢 棣欐腐 21",
-        "馃嚭馃嚫 缇庡浗 01",
-        "馃嚭馃嚫 缇庡浗 02",
-        "馃嚭馃嚫 缇庡浗 03",
-        "馃嚭馃嚫 缇庡浗 04",
-        "馃嚭馃嚫 缇庡浗 05",
-        "馃嚭馃嚫 缇庡浗 06",
-        "馃嚭馃嚫 缇庡浗 07",
-        "馃嚭馃嚫 缇庡浗 08",
-        "馃嚭馃嚫 缇庡浗 09",
-        "馃嚭馃嚫 缇庡浗 10",
-        "馃嚭馃嚫 缇庡浗 11",
-        "馃嚭馃嚫 缇庡浗 12",
-        "馃嚭馃嚫 缇庡浗 13",
-        "馃嚡馃嚨 鏃ユ湰 01",
-        "馃嚡馃嚨 鏃ユ湰 02",
-        "馃嚡馃嚨 鏃ユ湰 03",
-        "馃嚡馃嚨 鏃ユ湰 04",
-        "馃嚡馃嚨 鏃ユ湰 05",
-        "馃嚡馃嚨 鏃ユ湰 06",
-        "馃嚡馃嚨 鏃ユ湰 07",
-        "馃嚡馃嚨 鏃ユ湰 08",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
-        "馃嚫馃嚞 鏂板姞鍧?01",
-        "馃嚫馃嚞 鏂板姞鍧?02",
-        "馃嚫馃嚞 鏂板姞鍧?03",
-        "馃嚫馃嚞 鏂板姞鍧?04"
+        "Traffic: 18.81 GB | 150 GB",
+        "Expire: 2026-01-26",
+        "🇭🇰 香港实验性 IEPL 中继 1",
+        "🇯🇵 日本实验性 IEPL 中继 1",
+        "🇸🇬 新加坡实验性 IEPL 中继 1",
+        "🇺🇸 美国实验性 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 2",
+        "🇭🇰 香港高级 IEPL 中继 3",
+        "🇯🇵 日本高级 IEPL 中继 1",
+        "🇯🇵 日本高级 IEPL 中继 2",
+        "🇯🇵 日本高级 IEPL 中继 3",
+        "🇸🇬 新加坡高级 IEPL 中继 1",
+        "🇸🇬 新加坡高级 IEPL 中继 2",
+        "🇸🇬 新加坡高级 IEPL 中继 3",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 1",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 2",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 3",
+        "🇺🇸 美国高级 IEPL 中继 1",
+        "🇺🇸 美国高级 IEPL 中继 2",
+        "🇺🇸 美国高级 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 1",
+        "🇭🇰 香港标准 IEPL 中继 2",
+        "🇭🇰 香港标准 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 4",
+        "🇭🇰 香港标准 IEPL 中继 5",
+        "🇭🇰 香港标准 IEPL 中继 6",
+        "🇭🇰 香港标准 IEPL 中继 7",
+        "🇭🇰 香港标准 IEPL 中继 8",
+        "🇯🇵 日本标准 IEPL 中继 1",
+        "🇯🇵 日本标准 IEPL 中继 2",
+        "🇯🇵 日本标准 IEPL 中继 3",
+        "🇯🇵 日本标准 IEPL 中继 4",
+        "🇯🇵 日本标准 IEPL 中继 5",
+        "🇯🇵 日本标准 IEPL 中继 6",
+        "🇯🇵 日本标准 IEPL 中继 7",
+        "🇯🇵 日本标准 IEPL 中继 8",
+        "🇸🇬 新加坡标准 IEPL 中继 1",
+        "🇸🇬 新加坡标准 IEPL 中继 2",
+        "🇸🇬 新加坡标准 IEPL 中继 3",
+        "🇸🇬 新加坡标准 IEPL 中继 4",
+        "🇸🇬 新加坡标准 IEPL 中继 5",
+        "🇸🇬 新加坡标准 IEPL 中继 6",
+        "🇸🇬 新加坡标准 IEPL 中继 7",
+        "🇸🇬 新加坡标准 IEPL 中继 8",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 1",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 2",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 1",
+        "🇺🇸 美国标准 IEPL 中继 2",
+        "🇺🇸 美国标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 4",
+        "🇺🇸 美国标准 IEPL 中继 5",
+        "🇺🇸 美国标准 IEPL 中继 6",
+        "🇺🇸 美国标准 IEPL 中继 7",
+        "🇺🇸 美国标准 IEPL 中继 8",
+        "🇲🇩 摩尔多瓦标准 IEPL 中继 1",
+        "🇺🇦 乌克兰标准 IEPL 中继 1",
+        "🇮🇹 意大利标准 IEPL 中继 1",
+        "🇭🇺 匈牙利标准 IEPL 中继 1",
+        "🇪🇸 西班牙标准 IEPL 中继 1",
+        "🇹🇷 土耳其标准 IEPL 中继 1",
+        "🇩🇪 德国标准 IEPL 中继 1",
+        "🇩🇪 德国标准 IEPL 中继 2",
+        "🇬🇧 英国标准 IEPL 中继 1",
+        "🇬🇧 英国标准 IEPL 中继 2",
+        "🇳🇱 荷兰标准 IEPL 中继 1",
+        "🇳🇱 荷兰标准 IEPL 中继 2",
+        "🇫🇷 法国标准 IEPL 中继 1",
+        "🇫🇷 法国标准 IEPL 中继 2",
+        "🇨🇦 加拿大标准 IEPL 中继 1",
+        "🇨🇦 加拿大标准 IEPL 中继 2",
+        "🇦🇷 阿根廷标准 IEPL 中继 1",
+        "🇧🇷 巴西标准 IEPL 中继 1",
+        "🇨🇱 智利标准 IEPL 中继 1",
+        "🇦🇺 澳大利亚标准 IEPL 中继 1",
+        "🇳🇿 新西兰标准 IEPL 中继 1",
+        "🇰🇷 韩国标准 IEPL 中继 1",
+        "🇰🇷 韩国标准 IEPL 中继 2",
+        "🇮🇩 印尼标准 IEPL 中继 1",
+        "🇹🇭 泰国标准 IEPL 中继 1",
+        "🇻🇳 越南标准 IEPL 中继 1",
+        "🇮🇳 印度标准 IEPL 中继 1",
+        "🇵🇰 巴基斯坦标准 IEPL 中继 1",
+        "🇮🇱 以色列标准 IEPL 中继 1",
+        "🇦🇪 阿联酋标准 IEPL 中继 1",
+        "🇵🇭 菲律宾标准 IEPL 中继 1",
+        "🇲🇾 马来西亚标准 IEPL 中继 1",
+        "🇪🇬 埃及标准 IEPL 中继 1"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -442,644 +492,995 @@
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
-        "褰撳墠娴侀噺:66.88G / 300.00G",
-        "馃嚟馃嚢 棣欐腐 01",
-        "馃嚟馃嚢 棣欐腐 02",
-        "馃嚟馃嚢 棣欐腐 03",
-        "馃嚟馃嚢 棣欐腐 04",
-        "馃嚟馃嚢 棣欐腐 05",
-        "馃嚟馃嚢 棣欐腐 06",
-        "馃嚟馃嚢 棣欐腐 07",
-        "馃嚟馃嚢 棣欐腐 08",
-        "馃嚟馃嚢 棣欐腐 09",
-        "馃嚟馃嚢 棣欐腐 10",
-        "馃嚟馃嚢 棣欐腐 11",
-        "馃嚟馃嚢 棣欐腐 12",
-        "馃嚟馃嚢 棣欐腐 13",
-        "馃嚟馃嚢 棣欐腐 14",
-        "馃嚟馃嚢 棣欐腐 15",
-        "馃嚟馃嚢 棣欐腐 16",
-        "馃嚟馃嚢 棣欐腐 17",
-        "馃嚟馃嚢 棣欐腐 18",
-        "馃嚟馃嚢 棣欐腐 19",
-        "馃嚟馃嚢 棣欐腐 20",
-        "馃嚟馃嚢 棣欐腐 21",
-        "馃嚭馃嚫 缇庡浗 01",
-        "馃嚭馃嚫 缇庡浗 02",
-        "馃嚭馃嚫 缇庡浗 03",
-        "馃嚭馃嚫 缇庡浗 04",
-        "馃嚭馃嚫 缇庡浗 05",
-        "馃嚭馃嚫 缇庡浗 06",
-        "馃嚭馃嚫 缇庡浗 07",
-        "馃嚭馃嚫 缇庡浗 08",
-        "馃嚭馃嚫 缇庡浗 09",
-        "馃嚭馃嚫 缇庡浗 10",
-        "馃嚭馃嚫 缇庡浗 11",
-        "馃嚭馃嚫 缇庡浗 12",
-        "馃嚭馃嚫 缇庡浗 13",
-        "馃嚡馃嚨 鏃ユ湰 01",
-        "馃嚡馃嚨 鏃ユ湰 02",
-        "馃嚡馃嚨 鏃ユ湰 03",
-        "馃嚡馃嚨 鏃ユ湰 04",
-        "馃嚡馃嚨 鏃ユ湰 05",
-        "馃嚡馃嚨 鏃ユ湰 06",
-        "馃嚡馃嚨 鏃ユ湰 07",
-        "馃嚡馃嚨 鏃ユ湰 08",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
-        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
-        "馃嚫馃嚞 鏂板姞鍧?01",
-        "馃嚫馃嚞 鏂板姞鍧?02",
-        "馃嚫馃嚞 鏂板姞鍧?03",
-        "馃嚫馃嚞 鏂板姞鍧?04"
+        "Traffic: 18.81 GB | 150 GB",
+        "Expire: 2026-01-26",
+        "🇭🇰 香港实验性 IEPL 中继 1",
+        "🇯🇵 日本实验性 IEPL 中继 1",
+        "🇸🇬 新加坡实验性 IEPL 中继 1",
+        "🇺🇸 美国实验性 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 1",
+        "🇭🇰 香港高级 IEPL 中继 2",
+        "🇭🇰 香港高级 IEPL 中继 3",
+        "🇯🇵 日本高级 IEPL 中继 1",
+        "🇯🇵 日本高级 IEPL 中继 2",
+        "🇯🇵 日本高级 IEPL 中继 3",
+        "🇸🇬 新加坡高级 IEPL 中继 1",
+        "🇸🇬 新加坡高级 IEPL 中继 2",
+        "🇸🇬 新加坡高级 IEPL 中继 3",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 1",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 2",
+        "🇹🇼 🇨🇳 台湾高级 IEPL 中继 3",
+        "🇺🇸 美国高级 IEPL 中继 1",
+        "🇺🇸 美国高级 IEPL 中继 2",
+        "🇺🇸 美国高级 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 1",
+        "🇭🇰 香港标准 IEPL 中继 2",
+        "🇭🇰 香港标准 IEPL 中继 3",
+        "🇭🇰 香港标准 IEPL 中继 4",
+        "🇭🇰 香港标准 IEPL 中继 5",
+        "🇭🇰 香港标准 IEPL 中继 6",
+        "🇭🇰 香港标准 IEPL 中继 7",
+        "🇭🇰 香港标准 IEPL 中继 8",
+        "🇯🇵 日本标准 IEPL 中继 1",
+        "🇯🇵 日本标准 IEPL 中继 2",
+        "🇯🇵 日本标准 IEPL 中继 3",
+        "🇯🇵 日本标准 IEPL 中继 4",
+        "🇯🇵 日本标准 IEPL 中继 5",
+        "🇯🇵 日本标准 IEPL 中继 6",
+        "🇯🇵 日本标准 IEPL 中继 7",
+        "🇯🇵 日本标准 IEPL 中继 8",
+        "🇸🇬 新加坡标准 IEPL 中继 1",
+        "🇸🇬 新加坡标准 IEPL 中继 2",
+        "🇸🇬 新加坡标准 IEPL 中继 3",
+        "🇸🇬 新加坡标准 IEPL 中继 4",
+        "🇸🇬 新加坡标准 IEPL 中继 5",
+        "🇸🇬 新加坡标准 IEPL 中继 6",
+        "🇸🇬 新加坡标准 IEPL 中继 7",
+        "🇸🇬 新加坡标准 IEPL 中继 8",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 1",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 2",
+        "🇹🇼 🇨🇳 台湾标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 1",
+        "🇺🇸 美国标准 IEPL 中继 2",
+        "🇺🇸 美国标准 IEPL 中继 3",
+        "🇺🇸 美国标准 IEPL 中继 4",
+        "🇺🇸 美国标准 IEPL 中继 5",
+        "🇺🇸 美国标准 IEPL 中继 6",
+        "🇺🇸 美国标准 IEPL 中继 7",
+        "🇺🇸 美国标准 IEPL 中继 8",
+        "🇲🇩 摩尔多瓦标准 IEPL 中继 1",
+        "🇺🇦 乌克兰标准 IEPL 中继 1",
+        "🇮🇹 意大利标准 IEPL 中继 1",
+        "🇭🇺 匈牙利标准 IEPL 中继 1",
+        "🇪🇸 西班牙标准 IEPL 中继 1",
+        "🇹🇷 土耳其标准 IEPL 中继 1",
+        "🇩🇪 德国标准 IEPL 中继 1",
+        "🇩🇪 德国标准 IEPL 中继 2",
+        "🇬🇧 英国标准 IEPL 中继 1",
+        "🇬🇧 英国标准 IEPL 中继 2",
+        "🇳🇱 荷兰标准 IEPL 中继 1",
+        "🇳🇱 荷兰标准 IEPL 中继 2",
+        "🇫🇷 法国标准 IEPL 中继 1",
+        "🇫🇷 法国标准 IEPL 中继 2",
+        "🇨🇦 加拿大标准 IEPL 中继 1",
+        "🇨🇦 加拿大标准 IEPL 中继 2",
+        "🇦🇷 阿根廷标准 IEPL 中继 1",
+        "🇧🇷 巴西标准 IEPL 中继 1",
+        "🇨🇱 智利标准 IEPL 中继 1",
+        "🇦🇺 澳大利亚标准 IEPL 中继 1",
+        "🇳🇿 新西兰标准 IEPL 中继 1",
+        "🇰🇷 韩国标准 IEPL 中继 1",
+        "🇰🇷 韩国标准 IEPL 中继 2",
+        "🇮🇩 印尼标准 IEPL 中继 1",
+        "🇹🇭 泰国标准 IEPL 中继 1",
+        "🇻🇳 越南标准 IEPL 中继 1",
+        "🇮🇳 印度标准 IEPL 中继 1",
+        "🇵🇰 巴基斯坦标准 IEPL 中继 1",
+        "🇮🇱 以色列标准 IEPL 中继 1",
+        "🇦🇪 阿联酋标准 IEPL 中继 1",
+        "🇵🇭 菲律宾标准 IEPL 中继 1",
+        "🇲🇾 马来西亚标准 IEPL 中继 1",
+        "🇪🇬 埃及标准 IEPL 中继 1"
       ]
     },
     {
-      "tag": "馃幆 鍏ㄧ悆鐩磋繛",
+      "tag": "🎯 全球直连",
       "type": "direct"
     },
     {
-      "tag": "褰撳墠娴侀噺:66.88G / 300.00G",
+      "tag": "Traffic: 18.81 GB | 150 GB",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18300,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 10001,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 01",
+      "tag": "Expire: 2026-01-26",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18300,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 10001,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 02",
+      "tag": "🇭🇰 香港实验性 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18305,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 10001,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 03",
+      "tag": "🇯🇵 日本实验性 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18310,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 10002,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 04",
+      "tag": "🇸🇬 新加坡实验性 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18315,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 10003,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 05",
+      "tag": "🇺🇸 美国实验性 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18320,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 10004,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 06",
+      "tag": "🇭🇰 香港高级 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18325,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12001,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 07",
+      "tag": "🇭🇰 香港高级 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18330,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12002,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 08",
+      "tag": "🇭🇰 香港高级 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18335,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12003,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 09",
+      "tag": "🇯🇵 日本高级 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18340,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 12011,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 10",
+      "tag": "🇯🇵 日本高级 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18345,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 12012,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 11",
+      "tag": "🇯🇵 日本高级 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18350,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 12013,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 12",
+      "tag": "🇸🇬 新加坡高级 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18400,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12031,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 13",
+      "tag": "🇸🇬 新加坡高级 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18405,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12032,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 14",
+      "tag": "🇸🇬 新加坡高级 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18410,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12033,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 15",
+      "tag": "🇹🇼 🇨🇳 台湾高级 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18415,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12041,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 16",
+      "tag": "🇹🇼 🇨🇳 台湾高级 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18420,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12042,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 17",
+      "tag": "🇹🇼 🇨🇳 台湾高级 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18425,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 12043,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 18",
+      "tag": "🇺🇸 美国高级 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18430,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 12021,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 19",
+      "tag": "🇺🇸 美国高级 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18435,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 12022,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 20",
+      "tag": "🇺🇸 美国高级 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18440,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 12023,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚟馃嚢 棣欐腐 21",
+      "tag": "🇭🇰 香港标准 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18445,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11001,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 01",
+      "tag": "🇭🇰 香港标准 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18100,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11002,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 02",
+      "tag": "🇭🇰 香港标准 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18105,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11003,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 03",
+      "tag": "🇭🇰 香港标准 IEPL 中继 4",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18110,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11004,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 04",
+      "tag": "🇭🇰 香港标准 IEPL 中继 5",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18115,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11005,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 05",
+      "tag": "🇭🇰 香港标准 IEPL 中继 6",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18120,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11006,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 06",
+      "tag": "🇭🇰 香港标准 IEPL 中继 7",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18125,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11007,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 07",
+      "tag": "🇭🇰 香港标准 IEPL 中继 8",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18130,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11008,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 08",
+      "tag": "🇯🇵 日本标准 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18135,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11011,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 09",
+      "tag": "🇯🇵 日本标准 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18140,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11012,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 10",
+      "tag": "🇯🇵 日本标准 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18145,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11013,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 11",
+      "tag": "🇯🇵 日本标准 IEPL 中继 4",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18150,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11014,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 12",
+      "tag": "🇯🇵 日本标准 IEPL 中继 5",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18155,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11015,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚭馃嚫 缇庡浗 13",
+      "tag": "🇯🇵 日本标准 IEPL 中继 6",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18160,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11016,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 01",
+      "tag": "🇯🇵 日本标准 IEPL 中继 7",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18002,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11017,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 02",
+      "tag": "🇯🇵 日本标准 IEPL 中继 8",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18005,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11018,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 03",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18010,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11031,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 04",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "dbeb30a.orxyji.xyz",
-      "server_port": 18015,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11032,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 05",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18020,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11033,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 06",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 4",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18025,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11034,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 07",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 5",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18030,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11035,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚡馃嚨 鏃ユ湰 08",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 6",
       "type": "shadowsocks",
-      "server": "ca43a43.pcvyex.xyz",
-      "server_port": 18035,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11036,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 7",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18355,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11037,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
+      "tag": "🇸🇬 新加坡标准 IEPL 中继 8",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18360,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11038,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
+      "tag": "🇹🇼 🇨🇳 台湾标准 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18365,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11041,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
+      "tag": "🇹🇼 🇨🇳 台湾标准 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18370,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11042,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
+      "tag": "🇹🇼 🇨🇳 台湾标准 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18375,
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11043,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
+      "tag": "🇺🇸 美国标准 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18356,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11021,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
+      "tag": "🇺🇸 美国标准 IEPL 中继 2",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18361,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11022,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
+      "tag": "🇺🇸 美国标准 IEPL 中继 3",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18366,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11023,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
+      "tag": "🇺🇸 美国标准 IEPL 中继 4",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18371,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11024,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
+      "tag": "🇺🇸 美国标准 IEPL 中继 5",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18376,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11025,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚫馃嚞 鏂板姞鍧?01",
+      "tag": "🇺🇸 美国标准 IEPL 中继 6",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18380,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11026,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚫馃嚞 鏂板姞鍧?02",
+      "tag": "🇺🇸 美国标准 IEPL 中继 7",
       "type": "shadowsocks",
-      "server": "a6d3e87.wndtkn.xyz",
-      "server_port": 18385,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11027,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚫馃嚞 鏂板姞鍧?03",
+      "tag": "🇺🇸 美国标准 IEPL 中继 8",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18390,
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11028,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     },
     {
-      "tag": "馃嚫馃嚞 鏂板姞鍧?04",
+      "tag": "🇲🇩 摩尔多瓦标准 IEPL 中继 1",
       "type": "shadowsocks",
-      "server": "cfac7ee.gylcxo.xyz",
-      "server_port": 18395,
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11050,
       "method": "aes-128-gcm",
-      "password": "dfbdb37706af90a9",
+      "password": "Sj10bnYDe7w6V29E",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇺🇦 乌克兰标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11051,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇮🇹 意大利标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11052,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇭🇺 匈牙利标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11053,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇪🇸 西班牙标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11054,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇹🇷 土耳其标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11055,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇩🇪 德国标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11056,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇩🇪 德国标准 IEPL 中继 2",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11057,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇬🇧 英国标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11058,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇬🇧 英国标准 IEPL 中继 2",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11059,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇳🇱 荷兰标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11060,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇳🇱 荷兰标准 IEPL 中继 2",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11061,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇫🇷 法国标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11062,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇫🇷 法国标准 IEPL 中继 2",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11063,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇨🇦 加拿大标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11064,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇨🇦 加拿大标准 IEPL 中继 2",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11065,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇦🇷 阿根廷标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11066,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇧🇷 巴西标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11067,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇨🇱 智利标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11068,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇦🇺 澳大利亚标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11069,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇳🇿 新西兰标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11070,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇰🇷 韩国标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11071,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇰🇷 韩国标准 IEPL 中继 2",
+      "type": "shadowsocks",
+      "server": "shdata1.fc-smartcloud.xyz",
+      "server_port": 11072,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇮🇩 印尼标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11073,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇹🇭 泰国标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11074,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇻🇳 越南标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11075,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇮🇳 印度标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11080,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇵🇰 巴基斯坦标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11081,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇮🇱 以色列标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11082,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇦🇪 阿联酋标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11083,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇵🇭 菲律宾标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11084,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇲🇾 马来西亚标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "gzdata1.fc-smartcloud.xyz",
+      "server_port": 11085,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
+    },
+    {
+      "tag": "🇪🇬 埃及标准 IEPL 中继 1",
+      "type": "shadowsocks",
+      "server": "bjdata1.fc-smartcloud.xyz",
+      "server_port": 11086,
+      "method": "aes-128-gcm",
+      "password": "Sj10bnYDe7w6V29E",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=6c24602d78.m.ctrip.com;"
     }
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "馃悹 婕忕綉涔嬮奔",
-    "default_mark": 666,
+    "final": "🐠 漏网之鱼",
     "rules": [
       {
         "action": "sniff"
@@ -1090,7 +1491,7 @@
       },
       {
         "clash_mode": "direct",
-        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+        "outbound": "🎯 全球直连"
       },
       {
         "clash_mode": "global",
@@ -1103,74 +1504,74 @@
           "yacd.haishan.me",
           "d.metacubex.one"
         ],
-        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+        "outbound": "🎯 全球直连"
       },
       {
         "rule_set": "geosite-private",
-        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+        "outbound": "🎯 全球直连"
       },
       {
         "rule_set": "geosite-chat",
-        "outbound": "馃 OpenAI"
+        "outbound": "🤖 OpenAI"
       },
       {
         "rule_set": "geosite-youtube",
-        "outbound": "馃摴 YouTube"
+        "outbound": "📹 YouTube"
       },
       {
         "rule_set": "geosite-github",
-        "outbound": "馃懆鈥嶐煉?Github"
+        "outbound": "👨‍💻 Github"
       },
       {
         "rule_set": [
           "geosite-google",
           "geoip-google"
         ],
-        "outbound": "馃崁 Google"
+        "outbound": "🍀 Google"
       },
       {
         "rule_set": [
           "geosite-telegram",
           "geoip-telegram"
         ],
-        "outbound": "馃摬 Telegram"
+        "outbound": "📲 Telegram"
       },
       {
         "rule_set": "geosite-tiktok",
-        "outbound": "馃幍 TikTok"
+        "outbound": "🎵 TikTok"
       },
       {
         "rule_set": [
           "geosite-netflix",
           "geoip-netflix"
         ],
-        "outbound": "馃帴 Netflix"
+        "outbound": "🎥 Netflix"
       },
       {
         "rule_set": [
           "geosite-apple",
           "geoip-apple"
         ],
-        "outbound": "馃崗 Apple"
+        "outbound": "🍏 Apple"
       },
       {
         "rule_set": "geosite-onedrive",
-        "outbound": "馃惉 OneDrive"
+        "outbound": "🐬 OneDrive"
       },
       {
         "rule_set": "geosite-microsoft",
-        "outbound": "馃獰 Microsoft"
+        "outbound": "🪟 Microsoft"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "馃殌 鑺傜偣閫夋嫨"
+        "outbound": "🚀 节点选择"
       },
       {
         "rule_set": [
           "geoip-cn",
           "geosite-cn"
         ],
-        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+        "outbound": "🎯 全球直连"
       }
     ],
     "rule_set": [
@@ -1178,134 +1579,134 @@
         "tag": "geosite-chat",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-github",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-tiktok",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-apple",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-onedrive",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-private",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-apple",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geoip-private",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
-        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
+        "download_detour": "🚀 节点选择"
       }
     ]
   }
