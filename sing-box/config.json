@@ -1,0 +1,1312 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "0.0.0.0:9095",
+      "external_ui": "/etc/sing-box/ui",
+      "secret": "",
+      "external_ui_download_url": "https://ghfast.top/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "馃幆 鍏ㄧ悆鐩磋繛",
+      "default_mode": "rule"
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "/etc/sing-box/cache.db",
+      "store_fakeip": false
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_direct",
+        "address": "223.5.5.5",
+        "address_strategy": "ipv4_only",
+        "strategy": "ipv4_only",
+        "detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "dns_proxy",
+        "address": "tls://8.8.8.8",
+        "address_strategy": "ipv4_only",
+        "strategy": "ipv4_only",
+        "detour": "馃殌 鑺傜偣閫夋嫨"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "dns_direct",
+        "disable_cache": true
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "dns_proxy"
+      }
+    ],
+    "final": "dns_proxy",
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "type": "tproxy",
+      "tag": "tproxy-in",
+      "listen": "0.0.0.0",
+      "listen_port": 7895
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "馃殌 鑺傜偣閫夋嫨",
+      "type": "selector",
+      "outbounds": [
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃幆 鍏ㄧ悆鐩磋繛"
+      ]
+    },
+    {
+      "tag": "馃摴 YouTube",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃 OpenAI",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃崁 Google",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃懆鈥嶐煉?Github",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃獰 Microsoft",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃幆 鍏ㄧ悆鐩磋繛"
+      ]
+    },
+    {
+      "tag": "馃惉 OneDrive",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃幍 TikTok",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃帴 Netflix",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃摬 Telegram",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "鈾伙笍 鑷姩閫夋嫨",
+        "馃敮 棣欐腐鑷姩",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣",
+        "馃惛 鎵嬪姩鍒囨崲"
+      ]
+    },
+    {
+      "tag": "馃崗 Apple",
+      "type": "selector",
+      "outbounds": [
+        "馃幆 鍏ㄧ悆鐩磋繛",
+        "馃嚟馃嚢 棣欐腐鑺傜偣",
+        "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+        "馃嚭馃嚥 缇庡浗鑺傜偣"
+      ]
+    },
+    {
+      "tag": "馃悹 婕忕綉涔嬮奔",
+      "type": "selector",
+      "outbounds": [
+        "馃殌 鑺傜偣閫夋嫨",
+        "馃幆 鍏ㄧ悆鐩磋繛"
+      ]
+    },
+    {
+      "tag": "馃惛 鎵嬪姩鍒囨崲",
+      "type": "selector",
+      "outbounds": [
+        "褰撳墠娴侀噺:66.88G / 300.00G",
+        "馃嚟馃嚢 棣欐腐 01",
+        "馃嚟馃嚢 棣欐腐 02",
+        "馃嚟馃嚢 棣欐腐 03",
+        "馃嚟馃嚢 棣欐腐 04",
+        "馃嚟馃嚢 棣欐腐 05",
+        "馃嚟馃嚢 棣欐腐 06",
+        "馃嚟馃嚢 棣欐腐 07",
+        "馃嚟馃嚢 棣欐腐 08",
+        "馃嚟馃嚢 棣欐腐 09",
+        "馃嚟馃嚢 棣欐腐 10",
+        "馃嚟馃嚢 棣欐腐 11",
+        "馃嚟馃嚢 棣欐腐 12",
+        "馃嚟馃嚢 棣欐腐 13",
+        "馃嚟馃嚢 棣欐腐 14",
+        "馃嚟馃嚢 棣欐腐 15",
+        "馃嚟馃嚢 棣欐腐 16",
+        "馃嚟馃嚢 棣欐腐 17",
+        "馃嚟馃嚢 棣欐腐 18",
+        "馃嚟馃嚢 棣欐腐 19",
+        "馃嚟馃嚢 棣欐腐 20",
+        "馃嚟馃嚢 棣欐腐 21",
+        "馃嚭馃嚫 缇庡浗 01",
+        "馃嚭馃嚫 缇庡浗 02",
+        "馃嚭馃嚫 缇庡浗 03",
+        "馃嚭馃嚫 缇庡浗 04",
+        "馃嚭馃嚫 缇庡浗 05",
+        "馃嚭馃嚫 缇庡浗 06",
+        "馃嚭馃嚫 缇庡浗 07",
+        "馃嚭馃嚫 缇庡浗 08",
+        "馃嚭馃嚫 缇庡浗 09",
+        "馃嚭馃嚫 缇庡浗 10",
+        "馃嚭馃嚫 缇庡浗 11",
+        "馃嚭馃嚫 缇庡浗 12",
+        "馃嚭馃嚫 缇庡浗 13",
+        "馃嚡馃嚨 鏃ユ湰 01",
+        "馃嚡馃嚨 鏃ユ湰 02",
+        "馃嚡馃嚨 鏃ユ湰 03",
+        "馃嚡馃嚨 鏃ユ湰 04",
+        "馃嚡馃嚨 鏃ユ湰 05",
+        "馃嚡馃嚨 鏃ユ湰 06",
+        "馃嚡馃嚨 鏃ユ湰 07",
+        "馃嚡馃嚨 鏃ユ湰 08",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
+        "馃嚫馃嚞 鏂板姞鍧?01",
+        "馃嚫馃嚞 鏂板姞鍧?02",
+        "馃嚫馃嚞 鏂板姞鍧?03",
+        "馃嚫馃嚞 鏂板姞鍧?04"
+      ]
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐鑺傜偣",
+      "type": "selector",
+      "outbounds": [
+        "馃嚟馃嚢 棣欐腐 01",
+        "馃嚟馃嚢 棣欐腐 02",
+        "馃嚟馃嚢 棣欐腐 03",
+        "馃嚟馃嚢 棣欐腐 04",
+        "馃嚟馃嚢 棣欐腐 05",
+        "馃嚟馃嚢 棣欐腐 06",
+        "馃嚟馃嚢 棣欐腐 07",
+        "馃嚟馃嚢 棣欐腐 08",
+        "馃嚟馃嚢 棣欐腐 09",
+        "馃嚟馃嚢 棣欐腐 10",
+        "馃嚟馃嚢 棣欐腐 11",
+        "馃嚟馃嚢 棣欐腐 12",
+        "馃嚟馃嚢 棣欐腐 13",
+        "馃嚟馃嚢 棣欐腐 14",
+        "馃嚟馃嚢 棣欐腐 15",
+        "馃嚟馃嚢 棣欐腐 16",
+        "馃嚟馃嚢 棣欐腐 17",
+        "馃嚟馃嚢 棣欐腐 18",
+        "馃嚟馃嚢 棣欐腐 19",
+        "馃嚟馃嚢 棣欐腐 20",
+        "馃嚟馃嚢 棣欐腐 21"
+      ]
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰鑺傜偣",
+      "type": "selector",
+      "outbounds": [
+        "馃嚡馃嚨 鏃ユ湰 01",
+        "馃嚡馃嚨 鏃ユ湰 02",
+        "馃嚡馃嚨 鏃ユ湰 03",
+        "馃嚡馃嚨 鏃ユ湰 04",
+        "馃嚡馃嚨 鏃ユ湰 05",
+        "馃嚡馃嚨 鏃ユ湰 06",
+        "馃嚡馃嚨 鏃ユ湰 07",
+        "馃嚡馃嚨 鏃ユ湰 08"
+      ]
+    },
+    {
+      "tag": "馃嚭馃嚥 缇庡浗鑺傜偣",
+      "type": "selector",
+      "outbounds": [
+        "馃嚭馃嚫 缇庡浗 01",
+        "馃嚭馃嚫 缇庡浗 02",
+        "馃嚭馃嚫 缇庡浗 03",
+        "馃嚭馃嚫 缇庡浗 04",
+        "馃嚭馃嚫 缇庡浗 05",
+        "馃嚭馃嚫 缇庡浗 06",
+        "馃嚭馃嚫 缇庡浗 07",
+        "馃嚭馃嚫 缇庡浗 08",
+        "馃嚭馃嚫 缇庡浗 09",
+        "馃嚭馃嚫 缇庡浗 10",
+        "馃嚭馃嚫 缇庡浗 11",
+        "馃嚭馃嚫 缇庡浗 12",
+        "馃嚭馃嚫 缇庡浗 13"
+      ]
+    },
+    {
+      "tag": "馃敮 棣欐腐鑷姩",
+      "type": "urltest",
+      "outbounds": [
+        "馃嚟馃嚢 棣欐腐 01",
+        "馃嚟馃嚢 棣欐腐 02",
+        "馃嚟馃嚢 棣欐腐 03",
+        "馃嚟馃嚢 棣欐腐 04",
+        "馃嚟馃嚢 棣欐腐 05",
+        "馃嚟馃嚢 棣欐腐 06",
+        "馃嚟馃嚢 棣欐腐 07",
+        "馃嚟馃嚢 棣欐腐 08",
+        "馃嚟馃嚢 棣欐腐 09",
+        "馃嚟馃嚢 棣欐腐 10",
+        "馃嚟馃嚢 棣欐腐 11",
+        "馃嚟馃嚢 棣欐腐 12",
+        "馃嚟馃嚢 棣欐腐 13",
+        "馃嚟馃嚢 棣欐腐 14",
+        "馃嚟馃嚢 棣欐腐 15",
+        "馃嚟馃嚢 棣欐腐 16",
+        "馃嚟馃嚢 棣欐腐 17",
+        "馃嚟馃嚢 棣欐腐 18",
+        "馃嚟馃嚢 棣欐腐 19",
+        "馃嚟馃嚢 棣欐腐 20",
+        "馃嚟馃嚢 棣欐腐 21"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "鈾伙笍 鑷姩閫夋嫨",
+      "type": "urltest",
+      "outbounds": [
+        "褰撳墠娴侀噺:66.88G / 300.00G",
+        "馃嚟馃嚢 棣欐腐 01",
+        "馃嚟馃嚢 棣欐腐 02",
+        "馃嚟馃嚢 棣欐腐 03",
+        "馃嚟馃嚢 棣欐腐 04",
+        "馃嚟馃嚢 棣欐腐 05",
+        "馃嚟馃嚢 棣欐腐 06",
+        "馃嚟馃嚢 棣欐腐 07",
+        "馃嚟馃嚢 棣欐腐 08",
+        "馃嚟馃嚢 棣欐腐 09",
+        "馃嚟馃嚢 棣欐腐 10",
+        "馃嚟馃嚢 棣欐腐 11",
+        "馃嚟馃嚢 棣欐腐 12",
+        "馃嚟馃嚢 棣欐腐 13",
+        "馃嚟馃嚢 棣欐腐 14",
+        "馃嚟馃嚢 棣欐腐 15",
+        "馃嚟馃嚢 棣欐腐 16",
+        "馃嚟馃嚢 棣欐腐 17",
+        "馃嚟馃嚢 棣欐腐 18",
+        "馃嚟馃嚢 棣欐腐 19",
+        "馃嚟馃嚢 棣欐腐 20",
+        "馃嚟馃嚢 棣欐腐 21",
+        "馃嚭馃嚫 缇庡浗 01",
+        "馃嚭馃嚫 缇庡浗 02",
+        "馃嚭馃嚫 缇庡浗 03",
+        "馃嚭馃嚫 缇庡浗 04",
+        "馃嚭馃嚫 缇庡浗 05",
+        "馃嚭馃嚫 缇庡浗 06",
+        "馃嚭馃嚫 缇庡浗 07",
+        "馃嚭馃嚫 缇庡浗 08",
+        "馃嚭馃嚫 缇庡浗 09",
+        "馃嚭馃嚫 缇庡浗 10",
+        "馃嚭馃嚫 缇庡浗 11",
+        "馃嚭馃嚫 缇庡浗 12",
+        "馃嚭馃嚫 缇庡浗 13",
+        "馃嚡馃嚨 鏃ユ湰 01",
+        "馃嚡馃嚨 鏃ユ湰 02",
+        "馃嚡馃嚨 鏃ユ湰 03",
+        "馃嚡馃嚨 鏃ユ湰 04",
+        "馃嚡馃嚨 鏃ユ湰 05",
+        "馃嚡馃嚨 鏃ユ湰 06",
+        "馃嚡馃嚨 鏃ユ湰 07",
+        "馃嚡馃嚨 鏃ユ湰 08",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
+        "馃嚫馃嚞 鏂板姞鍧?01",
+        "馃嚫馃嚞 鏂板姞鍧?02",
+        "馃嚫馃嚞 鏂板姞鍧?03",
+        "馃嚫馃嚞 鏂板姞鍧?04"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "tag": "GLOBAL",
+      "type": "selector",
+      "outbounds": [
+        "褰撳墠娴侀噺:66.88G / 300.00G",
+        "馃嚟馃嚢 棣欐腐 01",
+        "馃嚟馃嚢 棣欐腐 02",
+        "馃嚟馃嚢 棣欐腐 03",
+        "馃嚟馃嚢 棣欐腐 04",
+        "馃嚟馃嚢 棣欐腐 05",
+        "馃嚟馃嚢 棣欐腐 06",
+        "馃嚟馃嚢 棣欐腐 07",
+        "馃嚟馃嚢 棣欐腐 08",
+        "馃嚟馃嚢 棣欐腐 09",
+        "馃嚟馃嚢 棣欐腐 10",
+        "馃嚟馃嚢 棣欐腐 11",
+        "馃嚟馃嚢 棣欐腐 12",
+        "馃嚟馃嚢 棣欐腐 13",
+        "馃嚟馃嚢 棣欐腐 14",
+        "馃嚟馃嚢 棣欐腐 15",
+        "馃嚟馃嚢 棣欐腐 16",
+        "馃嚟馃嚢 棣欐腐 17",
+        "馃嚟馃嚢 棣欐腐 18",
+        "馃嚟馃嚢 棣欐腐 19",
+        "馃嚟馃嚢 棣欐腐 20",
+        "馃嚟馃嚢 棣欐腐 21",
+        "馃嚭馃嚫 缇庡浗 01",
+        "馃嚭馃嚫 缇庡浗 02",
+        "馃嚭馃嚫 缇庡浗 03",
+        "馃嚭馃嚫 缇庡浗 04",
+        "馃嚭馃嚫 缇庡浗 05",
+        "馃嚭馃嚫 缇庡浗 06",
+        "馃嚭馃嚫 缇庡浗 07",
+        "馃嚭馃嚫 缇庡浗 08",
+        "馃嚭馃嚫 缇庡浗 09",
+        "馃嚭馃嚫 缇庡浗 10",
+        "馃嚭馃嚫 缇庡浗 11",
+        "馃嚭馃嚫 缇庡浗 12",
+        "馃嚭馃嚫 缇庡浗 13",
+        "馃嚡馃嚨 鏃ユ湰 01",
+        "馃嚡馃嚨 鏃ユ湰 02",
+        "馃嚡馃嚨 鏃ユ湰 03",
+        "馃嚡馃嚨 鏃ユ湰 04",
+        "馃嚡馃嚨 鏃ユ湰 05",
+        "馃嚡馃嚨 鏃ユ湰 06",
+        "馃嚡馃嚨 鏃ユ湰 07",
+        "馃嚡馃嚨 鏃ユ湰 08",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
+        "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
+        "馃嚫馃嚞 鏂板姞鍧?01",
+        "馃嚫馃嚞 鏂板姞鍧?02",
+        "馃嚫馃嚞 鏂板姞鍧?03",
+        "馃嚫馃嚞 鏂板姞鍧?04"
+      ]
+    },
+    {
+      "tag": "馃幆 鍏ㄧ悆鐩磋繛",
+      "type": "direct"
+    },
+    {
+      "tag": "褰撳墠娴侀噺:66.88G / 300.00G",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18300,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 01",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18300,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 02",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18305,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 03",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18310,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 04",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18315,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 05",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18320,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 06",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18325,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 07",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18330,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 08",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18335,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 09",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18340,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 10",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18345,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 11",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18350,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 12",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18400,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 13",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18405,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 14",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18410,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 15",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18415,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 16",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18420,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 17",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18425,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 18",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18430,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 19",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18435,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 20",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18440,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚟馃嚢 棣欐腐 21",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18445,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 01",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18100,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 02",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18105,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 03",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18110,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 04",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18115,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 05",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18120,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 06",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18125,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 07",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18130,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 08",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18135,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 09",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18140,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 10",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18145,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 11",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18150,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 12",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18155,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚭馃嚫 缇庡浗 13",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18160,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 01",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18002,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 02",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18005,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 03",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18010,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 04",
+      "type": "shadowsocks",
+      "server": "dbeb30a.orxyji.xyz",
+      "server_port": 18015,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 05",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18020,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 06",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18025,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 07",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18030,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚡馃嚨 鏃ユ湰 08",
+      "type": "shadowsocks",
+      "server": "ca43a43.pcvyex.xyz",
+      "server_port": 18035,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 01",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18355,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 02",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18360,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 03",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18365,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 04",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18370,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 05",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18375,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 06",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18356,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 07",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18361,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 08",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18366,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 09",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18371,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚬馃嚰 馃嚚馃嚦 鍙版咕 10",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18376,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚫馃嚞 鏂板姞鍧?01",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18380,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚫馃嚞 鏂板姞鍧?02",
+      "type": "shadowsocks",
+      "server": "a6d3e87.wndtkn.xyz",
+      "server_port": 18385,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚫馃嚞 鏂板姞鍧?03",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18390,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    },
+    {
+      "tag": "馃嚫馃嚞 鏂板姞鍧?04",
+      "type": "shadowsocks",
+      "server": "cfac7ee.gylcxo.xyz",
+      "server_port": 18395,
+      "method": "aes-128-gcm",
+      "password": "dfbdb37706af90a9",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=lsnC7P9z56.microsoft.com;"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "final": "馃悹 婕忕綉涔嬮奔",
+    "default_mark": 666,
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "GLOBAL"
+      },
+      {
+        "domain": [
+          "clash.razord.top",
+          "yacd.metacubex.one",
+          "yacd.haishan.me",
+          "d.metacubex.one"
+        ],
+        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "rule_set": "geosite-private",
+        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "rule_set": "geosite-chat",
+        "outbound": "馃 OpenAI"
+      },
+      {
+        "rule_set": "geosite-youtube",
+        "outbound": "馃摴 YouTube"
+      },
+      {
+        "rule_set": "geosite-github",
+        "outbound": "馃懆鈥嶐煉?Github"
+      },
+      {
+        "rule_set": [
+          "geosite-google",
+          "geoip-google"
+        ],
+        "outbound": "馃崁 Google"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "馃摬 Telegram"
+      },
+      {
+        "rule_set": "geosite-tiktok",
+        "outbound": "馃幍 TikTok"
+      },
+      {
+        "rule_set": [
+          "geosite-netflix",
+          "geoip-netflix"
+        ],
+        "outbound": "馃帴 Netflix"
+      },
+      {
+        "rule_set": [
+          "geosite-apple",
+          "geoip-apple"
+        ],
+        "outbound": "馃崗 Apple"
+      },
+      {
+        "rule_set": "geosite-onedrive",
+        "outbound": "馃惉 OneDrive"
+      },
+      {
+        "rule_set": "geosite-microsoft",
+        "outbound": "馃獰 Microsoft"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "outbound": "馃殌 鑺傜偣閫夋嫨"
+      },
+      {
+        "rule_set": [
+          "geoip-cn",
+          "geosite-cn"
+        ],
+        "outbound": "馃幆 鍏ㄧ悆鐩磋繛"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-chat",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-youtube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-github",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-tiktok",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-microsoft",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-onedrive",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-geolocation-!cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geosite-private",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geoip-google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geoip-telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geoip-netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geoip-apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      },
+      {
+        "tag": "geoip-private",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
+        "download_detour": "馃幆 鍏ㄧ悆鐩磋繛"
+      }
+    ]
+  }
+}
